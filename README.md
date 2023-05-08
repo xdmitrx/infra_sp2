@@ -16,13 +16,6 @@ cd infra_sp2
 cd api_yamdb
 ```
 
-Создаем и активируем виртуальное окружение:
-```bash
-python3 -m venv venv
-source /venv/bin/activate (source /venv/Scripts/activate - для Windows)
-python -m pip install --upgrade pip
-```
-
 Ставим зависимости из requirements.txt:
 ```bash
 pip install -r requirements.txt
@@ -39,9 +32,6 @@ docker-compose up -d --build
 ```
 
 Выполняем миграции:
-```bash
-docker-compose exec web python manage.py makemigrations reviews
-```
 ```bash
 docker-compose exec web python manage.py migrate
 ```
@@ -78,3 +68,5 @@ DB_PORT=5432
 
 ### Документация API YaMDb
 Документация доступна по эндпойнту: http://localhost/redoc/
+
+Автор: Беликов Дмитрий https://github.com/xdmitrx
