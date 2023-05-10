@@ -13,13 +13,6 @@ REST API проект для сервиса YaMDb — сбор отзывов о
 ```bash
 git clone https://github.com/xdmitrx/infra_sp2
 cd infra_sp2
-cd api_yamdb
-```
-
-Ставим зависимости из requirements.txt:
-```bash
-pip install -r requirements.txt
-```
 
 Переходим в папку с файлом docker-compose.yaml:
 ```bash
@@ -58,6 +51,7 @@ docker-compose down -v
 
 ### Шаблон наполнения .env (не включен в текущий репозиторий) расположенный по пути infra/.env
 ```
+SECRET_KEY=default-key
 DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres
 POSTGRES_USER=postgres
